@@ -1,5 +1,10 @@
 {
   "DashboardPage": {
     "title": "Strona główna"
+  },
+  "ThemeToggle": {
+    "dark": "Ciemny",
+    "light": "Jasny",
+    "system": "Systemowy"
   }
 }
