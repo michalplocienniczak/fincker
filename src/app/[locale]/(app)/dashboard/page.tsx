@@ -1,13 +1,19 @@
 import React from "react"
-import { useTranslations } from "next-intl"
 import { ThemeToggle } from "@/components"
+import { getTranslations } from "next-intl/server"
+import { auth } from "@/auth"
 
-const DashboardPage = () => {
-  const t = useTranslations()
+const DashboardPage = async () => {
+  const t = await getTranslations()
+  const session = await auth()
+
   return (
     <main>
       <h1>{t("DashboardPage.title")}</h1>
       <ThemeToggle />
+      <code>
+        <pre>{JSON.stringify(session, null, 2)}</pre>
+      </code>
     </main>
   )
 }
