@@ -1,3 +1,4 @@
+import { Header } from "@/features/landing"
 import React from "react"
 
 const LandingLayout = ({
@@ -5,7 +6,12 @@ const LandingLayout = ({
 }: Readonly<{
   children: React.ReactNode
 }>) => {
-  return <div>LandingLayout {children}</div>
+  return (
+    <>
+      <Header />
+      {children}
+    </>
+  )
 }
 
 export default LandingLayout
