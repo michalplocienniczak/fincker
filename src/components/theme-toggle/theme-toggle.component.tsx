@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl"
 
 const ThemeToggle = () => {
   const { setTheme } = useTheme()
-  const t = useTranslations("ThemeToggle")
+  const t = useTranslations("theme-toggle")
 
   const dropdownMenuItemStyles = `flex gap-2 cursor-pointer`
   return (

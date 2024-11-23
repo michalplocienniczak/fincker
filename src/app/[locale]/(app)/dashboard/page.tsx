@@ -4,12 +4,12 @@ import { getTranslations } from "next-intl/server"
 import { auth } from "@/auth"
 
 const DashboardPage = async () => {
-  const t = await getTranslations()
+  const t = await getTranslations("dashboard-page")
   const session = await auth()
 
   return (
     <main>
-      <h1>{t("DashboardPage.title")}</h1>
+      <h1>{t("title")}</h1>
       <ThemeToggle />
       <code>
         <pre>{JSON.stringify(session, null, 2)}</pre>

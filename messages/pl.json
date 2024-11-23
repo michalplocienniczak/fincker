@@ -1,10 +1,31 @@
 {
-  "DashboardPage": {
+  "dashboard-page": {
     "title": "Strona główna"
   },
-  "ThemeToggle": {
+  "theme-toggle": {
     "dark": "Ciemny",
     "light": "Jasny",
     "system": "Systemowy"
+  },
+  "auth": {
+    "login": {
+      "title": "Zaloguj się",
+      "submit-btn-label": "Zaloguj się za pomocą Magic Link",
+      "email": {
+        "label": "Email",
+        "placeholder": "Wprowadź swój email",
+        "error": "Proszę wprowadzić poprawny email",
+        "description": "Wyślemy Ci link do zalogowania"
+      },
+      "success": {
+        "title": "Link wysłany",
+        "description": "Sprawdź swoją skrzynkę mailową, wysłaliśmy Ci link do zalogowania"
+      }
+    },
+    "signout": {
+      "title": "Wyloguj się",
+      "description": "Czy chcesz się wylogować?",
+      "submit-btn-label": "Wyloguj"
+    }
   }
 }

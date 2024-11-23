@@ -1,10 +1,31 @@
 {
-  "DashboardPage": {
+  "dashboard-page": {
     "title": "Dashboard"
   },
-  "ThemeToggle": {
+  "theme-toggle": {
     "dark": "Dark",
     "light": "Light",
     "system": "System"
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "submit-btn-label": "Login with Magic Link",
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email",
+        "error": "Please enter a valid email",
+        "description": "We'll send you a magic link to login"
+      },
+      "success": {
+        "title": "Link sent",
+        "description": "Check your inbox, we've sent you a login link"
+      }
+    },
+    "signout": {
+      "title": "Sign out",
+      "description": "Are you sure you want to sign out?",
+      "submit-btn-label": "Sign out"
+    }
   }
 }
