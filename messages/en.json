@@ -43,6 +43,14 @@
       }
     },
     "pricing-table": {
+      "period": {
+        "monthly": "mo",
+        "yearly": "yr"
+      },
+      "tabs": {
+        "monthly": "Monthly",
+        "yearly": "Yearly"
+      },
       "subscribe-button": {
         "btn-label": {
           "subscribe": "Subscribe",
