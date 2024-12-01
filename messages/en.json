@@ -41,6 +41,14 @@
         "logged-in": "Go to Dashboard",
         "not-logged-in": "Login or Sign up"
       }
+    },
+    "pricing-table": {
+      "subscribe-button": {
+        "btn-label": {
+          "subscribe": "Subscribe",
+          "get-started": "Get Started"
+        }
+      }
     }
   }
 }

@@ -27,5 +27,28 @@
       "description": "Czy chcesz się wylogować?",
       "submit-btn-label": "Wyloguj"
     }
+  },
+  "landing": {
+    "header": {
+      "demo-badge": "DEMO App",
+      "navbar": {
+        "title": "Menu",
+        "features": "Funkcje",
+        "pricing": "Cennik",
+        "contact": "Kontakt"
+      },
+      "call-to-action": {
+        "logged-in": "Przejdź do aplikacji",
+        "not-logged-in": "Zaloguj się"
+      }
+    },
+    "pricing-table": {
+      "subscribe-button": {
+        "btn-label": {
+          "subscribe": "Subskrybuj",
+          "get-started": "Rozpocznij"
+        }
+      }
+    }
   }
 }
