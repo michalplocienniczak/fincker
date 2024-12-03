@@ -1,23 +1,9 @@
-import NextAuth, { User, type DefaultSession } from "next-auth"
+import NextAuth, { type User } from "next-auth"
 import Resend from "next-auth/providers/resend"
 import { JWT } from "next-auth/jwt"
 
 import { prisma } from "@/prisma"
 import { PrismaAdapter } from "@auth/prisma-adapter"
-
-declare module "next-auth" {
-  interface Session {
-    user: {
-      id: string
-    } & DefaultSession["user"]
-  }
-}
-
-declare module "next-auth/jwt" {
-  interface JWT {
-    id: string
-  }
-}
 
 export const { auth, handlers, signIn, signOut } = NextAuth({
   session: {
