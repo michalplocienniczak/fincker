@@ -10,7 +10,7 @@ const outfit = Outfit({
 
 const Logo = () => {
   return (
-    <div className={`${outfit.className} text-4xl font-bold`}>
+    <div className={`${outfit.className} text-2xl sm:text-4xl font-bold`}>
       <Link href="/">Fincker</Link>
     </div>
   )

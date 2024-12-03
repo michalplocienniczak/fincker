@@ -9,7 +9,7 @@
   },
   "auth": {
     "login": {
-      "title": "Login",
+      "title": "Login or Sign up",
       "submit-btn-label": "Login with Magic Link",
       "email": {
         "label": "Email",
@@ -26,6 +26,37 @@
       "title": "Sign out",
       "description": "Are you sure you want to sign out?",
       "submit-btn-label": "Sign out"
+    }
+  },
+  "landing": {
+    "header": {
+      "demo-badge": "DEMO App",
+      "navbar": {
+        "title": "Menu",
+        "features": "Features",
+        "pricing": "Pricing",
+        "contact": "Contact"
+      },
+      "call-to-action": {
+        "logged-in": "Go to Dashboard",
+        "not-logged-in": "Login or Sign up"
+      }
+    },
+    "pricing-table": {
+      "period": {
+        "monthly": "mo",
+        "yearly": "yr"
+      },
+      "tabs": {
+        "monthly": "Monthly",
+        "yearly": "Yearly"
+      },
+      "subscribe-button": {
+        "btn-label": {
+          "subscribe": "Subscribe",
+          "get-started": "Get Started"
+        }
+      }
     }
   }
 }
