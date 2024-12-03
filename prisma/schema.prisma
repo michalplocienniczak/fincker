@@ -10,17 +10,19 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url               = env("DATABASE_URL")
+  directUrl         = env("DIRECT_URL")
 }
 
 model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String    @unique
-  emailVerified DateTime?
-  image         String?
-  accounts      Account[]
-  sessions      Session[]
+  id                  String              @id @default(cuid())
+  name                String?
+  email               String              @unique
+  emailVerified       DateTime?
+  image               String?
+  accounts            Account[]
+  sessions            Session[]
+  subscriptionDetails StripeSubscription?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -63,4 +65,15 @@ model VerificationToken {
   expires    DateTime
 
   @@id([identifier, token])
+}
+
+model StripeSubscription {
+  id               String  @id @default(cuid())
+  subscriptionId   String?
+  stripeCustomerId String  @unique
+  isPlanActive     Boolean @default(false)
+  planExpiresAt    BigInt?
+
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id])
 }
