@@ -1,3 +1,4 @@
+import { SUBSCRIPTION_PLAN } from "@/enums/subscription-plan.enum"
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
 
@@ -26,4 +27,19 @@ export const formatValueWithCurrency = (value: string | number, currencyCode: st
     console.error("Invalid currency code:", currencyCode, error)
     return currencyCode
   }
+}
+
+export const parseLookupKeyToPlan = (lookupKey: string | null) => {
+  if (lookupKey?.includes("fincker") && lookupKey.includes("lite")) {
+    return [SUBSCRIPTION_PLAN.LITE]
+  }
+  if (lookupKey?.includes("fincker") && lookupKey.includes("premium")) {
+    return [SUBSCRIPTION_PLAN.LITE, SUBSCRIPTION_PLAN.STANDARD, SUBSCRIPTION_PLAN.PREMIUM]
+  }
+
+  if (lookupKey?.includes("fincker")) {
+    return [SUBSCRIPTION_PLAN.LITE, SUBSCRIPTION_PLAN.STANDARD]
+  }
+
+  return null
 }
