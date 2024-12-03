@@ -1,3 +1,4 @@
+import { SUBSCRIPTION_PLAN } from "@/types"
 import en from "./messages/en.json"
 import { DefaultSession } from "next-auth"
 import "next-auth"
@@ -13,6 +14,7 @@ declare module "next-auth" {
   interface Session {
     user: {
       id: string
+      plan: SUBSCRIPTION_PLAN[] | null
     } & DefaultSession["user"]
   }
 }
