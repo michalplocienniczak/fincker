@@ -10,6 +10,7 @@ export const routing = defineRouting({
     "/": "/",
     "/dashboard": "/dashboard",
     "/login": "/login",
+    "/sign-out": "/sign-out",
   },
 })
 
