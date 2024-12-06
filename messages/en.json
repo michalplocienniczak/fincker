@@ -66,6 +66,18 @@
           "account": "Account",
           "billing": "Billing",
           "signout": "Sign out"
+    },
+    "budget": {
+      "new-budget": {
+        "dialog": {
+          "title": "Create a new budget",
+          "name": {
+            "label": "Name",
+            "placeholder": "Enter a name for your budget",
+            "error": "Please enter a name for your budget"
+          },
+          "submit-btn-label": "Create budget",
+          "cancel-btn-label": "Cancel"
         }
       }
     }

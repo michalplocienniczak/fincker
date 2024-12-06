@@ -66,6 +66,18 @@
           "account": "Konto",
           "billing": "Płatności",
           "signout": "Wyloguj się"
+    },
+    "budget": {
+      "new-budget": {
+        "dialog": {
+          "title": "Nowy budżet",
+          "name": {
+            "label": "Nazwa",
+            "placeholder": "Wprowadź nazwę budżetu",
+            "error": "Nazwa budżetu jest wymagana"
+          },
+          "submit-btn-label": "Utwórz budżet",
+          "cancel-btn-label": "Anuluj"
         }
       }
     }
