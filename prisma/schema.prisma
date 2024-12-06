@@ -9,9 +9,9 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url               = env("DATABASE_URL")
-  directUrl         = env("DIRECT_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 model User {
@@ -23,6 +23,7 @@ model User {
   accounts            Account[]
   sessions            Session[]
   subscriptionDetails StripeSubscription?
+  budgets             Budget[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -76,4 +77,15 @@ model StripeSubscription {
 
   userId String @unique
   user   User   @relation(fields: [userId], references: [id])
+}
+
+model Budget {
+  id   Int    @id @default(autoincrement())
+  name String
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
