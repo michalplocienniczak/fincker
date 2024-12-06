@@ -1,5 +1,4 @@
-import { SidebarProvider } from "@/components"
-import { AppSidebar } from "@/features/app-layout"
+import { SidebarProvider, AppSidebar } from "@/components"
 import React from "react"
 
 const AppLayout = ({

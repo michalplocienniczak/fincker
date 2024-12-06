@@ -92,7 +92,7 @@ const LoginForm = () => {
                 </FormItem>
               )}
             />
-            <Button type="submit" disabled={!isValid || !isDirty || isLoading}>
+            <Button type="submit" disabled={!isValid || !isDirty} loading={isLoading}>
               {t("submit-btn-label")}
             </Button>
           </form>

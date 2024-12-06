@@ -66,6 +66,12 @@
           "account": "Account",
           "billing": "Billing",
           "signout": "Sign out"
+        },
+        "budgets": {
+          "title": "Budgets",
+          "new-budget-btn-label": "Create a new budget"
+        }
+      }
     },
     "budget": {
       "new-budget": {
