@@ -19,7 +19,7 @@ const AppSidebar = async () => {
 
   return (
     <Sidebar>
-      <SidebarHeader>
+      <SidebarHeader className="m-2">
         <Logo />
       </SidebarHeader>
       <SidebarContent>
