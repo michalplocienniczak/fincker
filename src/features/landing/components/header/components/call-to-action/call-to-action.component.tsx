@@ -10,7 +10,7 @@ const CallToAction = async () => {
 
   if (!!session?.user) {
     return (
-      <Link href="/dashboard">
+      <Link href="/app">
         <Button>{t("logged-in")}</Button>
       </Link>
     )

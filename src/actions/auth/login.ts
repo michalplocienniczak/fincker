@@ -22,7 +22,7 @@ export const loginAction = async (email: string): Promise<ActionResponseType> =>
   await signIn("resend", {
     email,
     redirect: false,
-    redirectTo: "/dashboard",
+    redirectTo: "/app",
   })
 
   return {
