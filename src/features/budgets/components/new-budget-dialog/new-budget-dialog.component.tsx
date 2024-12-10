@@ -30,11 +30,12 @@ type NewBudgetDialogProps = {
 const NewBudgetDialog = ({ children }: NewBudgetDialogProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const t = useTranslations("app.budget.new-budget.dialog")
+  const tForm = useTranslations("app.budget.form")
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
 
   const formSchema = z.object({
-    name: z.string().min(1, t("name.error")),
+    name: z.string().min(1, tForm("name.error")),
   })
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -79,9 +80,9 @@ const NewBudgetDialog = ({ children }: NewBudgetDialogProps) => {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>{t("name.label")}</FormLabel>
+                  <FormLabel>{tForm("name.label")}</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder={t("name.placeholder")} />
+                    <Input {...field} placeholder={tForm("name.placeholder")} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
