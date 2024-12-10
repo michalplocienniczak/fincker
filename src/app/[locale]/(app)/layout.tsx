@@ -8,7 +8,7 @@ const AppLayout = ({
 }>) => {
   return (
     <SidebarProvider>
-      <AppSidebar /> <main>{children}</main>
+      <AppSidebar /> <main className="w-full">{children}</main>
     </SidebarProvider>
   )
 }

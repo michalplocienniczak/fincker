@@ -89,5 +89,9 @@
         }
       }
     }
+  },
+  "breadcrumbs": {
+    "home": "Strona główna",
+    "budgets": "Budżety"
   }
 }
